@@ -1,4 +1,5 @@
-#!/usr/bin/env sh
+#!/bin/bash
+
 cloc $(git rev-parse HEAD) | tee -a cloc.txt
 line=$( tail -n 2 cloc.txt | head -1 )
 echo $line
