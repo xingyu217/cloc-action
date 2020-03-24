@@ -8,7 +8,5 @@ for i in "${arr[@]}"
 do
     echo $i
 done
-
 #echo ${arr[-1]}
-
 #echo "::set-output name=lines::${arr[-1]}"
