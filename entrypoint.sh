@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 cloc $(git rev-parse HEAD) | tee -a cloc.txt
-cat cloc.txt
-line=$( tail -2 cloc.txt | head -1 )
+line=$( tail -n2 | head -1  cloc.txt )
+echo $line
 echo "::set-output name=lines::$line"
